@@ -1,45 +1,73 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link siti HTML</title>
-    <style>
-        .container{
-            display:flex;
-            flex-direction: column;
-            flex-wrap:wrap;
-        }
-        .item{
-            flex-grow:1;
-        }
-        body{
-            background-color:aliceblue
-        }
-        div{border: 4px solid rgb(39, 58, 226);
-            text-align:center;
-            margin: 100px;
-            
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link siti HTML</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px; /* distanza tra i box */
+      justify-content: center;
+      margin: 40px auto;
+    }
 
-            }
-        a:active{
-                color:rgb(255, 255, 255);
-                background-color: rgb(28, 80, 224);    
-                }
-        a:hover{
-                color:rgb(255, 255, 255);
-                background-color: rgb(28, 80, 224); 
-                }
+    .item {
+      flex-grow: 1;
+      border: 4px solid rgb(39, 58, 226);
+      text-align: center;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+    }
 
+    body {
+      background-color: aliceblue;
+      font-family: sans-serif;
+    }
 
+    a:active,
+    a:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(28, 80, 224);
+    }
 
-    </style>
+    a { /* evidenzio la passaggio del mouse il link corrente */
+      text-decoration: none;
+      color: rgb(28, 80, 224);
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 40px;
+      font-weight: bold;
+    }
+    .footer{ 
+      position: fixed; /* posizione fissa */
+      bottom:0; /* 0 margine da sotto */
+      left:0; /* niente margine da sx */
+      width: 100%; /* usa tutto lo spazio disponibile */
+      background-color: rgb(28, 80, 224);
+      color:white;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item"><a href="/pbertolini" target="_blank"><strong>website 1</strong></a><br></div>
-        <div class="item"><a href="/arizzardi" target="_blank"><strong>website 2</strong></a><br></div>
-        <div class="item"><a href="/index.html" target="_blank"><strong>website 3</strong></a><br></div>
-        <div class="item"><a href="/vmosna" target="_blank"><strong>website 4</strong></a><br></div>
-    </div>
+  <div class="intro">
+    <p>Da questa pagina sono visitabili alcuni progetti web sviluppati dalla classe 2A Liceo Scienze Applicate"</p>
+  </div>
+
+  <div class="container">
+    <div class="item"><a href="/2apb/pbertolini" target="_blank">Il microscopio</a></div>
+    <div class="item"><a href="/2apb/arizzardi" target="_blank">La cellula</a></div>
+    <div class="item"><a href="/2apb/sbertoglio" target="_blank">AI</a></div>
+    <div class="item"><a href="/2apb/vmosna" target="_blank">La cellula</a></div>
+  </div>
+  <div class="footer"><p>&copy Istituto "L. Guetti" Tione di Trento 2025</p></div>
 </body>
 </html>
