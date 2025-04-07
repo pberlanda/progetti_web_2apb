@@ -4,6 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link siti HTML</title>
     <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+        }
+        .item{
+            flex-grow:1;
+        }
         body{
             background-color:aliceblue
         }
@@ -27,11 +35,11 @@
     </style>
 </head>
 <body>
-    <div>
-        <a href="https://www.ladige.it/" target="_blank"><strong>L'Adige</strong></a><br>
-        <a href="https://www.gazzetta.it" target="_blank"><strong>La Gazzetta dello Sport</strong></a><br>
-        <a href="https://www.guetti.tn.it/" target="_blank"><strong>Istituto d'Istruzione Guetti</strong></a><br>
-        <a href="https://www.legaseriea.it/it" target="_blank"><strong>Lega Serie A</strong></a><br>
+    <div class="container">
+        <div class="item"><a href="https://pberlanda.altervista.org/2apb/pbertolini" target="_blank"><strong>website 1</strong></a><br></div>
+        <div class="item"><a href="https://pberlanda.altervista.org/2apb/arizzardi" target="_blank"><strong>website 2</strong></a><br></div>
+        <div class="item"><a href="https://pberlanda.altervista.org/2apb/sbertoglio" target="_blank"><strong>website 3</strong></a><br></div>
+        <div class="item"><a href="https://pberlanda.altervista.org/2apb/vmosna" target="_blank"><strong>website 4L'Adige</strong></a><br></div>
     </div>
 </body>
 </html>
